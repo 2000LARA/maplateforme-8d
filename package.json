@@ -1,0 +1,31 @@
+{
+  "name": "maplatforme-8d-backend-frontend",
+  "version": "1.0.0",
+  "description": "Plateforme de Qualité 8D - Backend & Frontend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "8d",
+    "quality",
+    "ishikawa",
+    "5whys",
+    "express"
+  ],
+  "author": "Antigravity",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.6.2",
+    "helmet": "^8.3.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}

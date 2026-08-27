@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8D Quality Platform - Dashboard</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Styling -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= AUTHENTICATION CONTAINER ================= -->
+  <div id="auth-container" class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="auth-logo">
+          <img src="/images/logo.png" alt="Logo entreprise" style="max-width: 60px; max-height: 60px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h2>Plateforme Qualité 8D</h2>
+        <p>Connectez-vous pour accéder à votre espace de travail</p>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form" class="auth-form">
+        <div class="form-group">
+          <label for="login-username">Nom d'utilisateur</label>
+          <input type="text" id="login-username" placeholder="Ex: admin" required autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label for="login-password">Mot de passe</label>
+          <input type="password" id="login-password" placeholder="••••••••" required autocomplete="current-password">
+        </div>
+        <div id="login-error" class="error-msg" style="display: none;"></div>
+        <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+        <p class="auth-switch">Pas encore de compte ? <a href="#" id="show-register">S'inscrire</a></p>
+      </form>
+
+      <!-- Register Form -->
+      <form id="register-form" class="auth-form" style="display: none;">
+        <div class="form-group">
+          <label for="register-name">Nom complet</label>
+          <input type="text" id="register-name" placeholder="Ex: Youssef Bennani" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="register-username">Nom d'utilisateur</label>
+          <input type="text" id="register-username" placeholder="Ex: youssef" required autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label for="register-password">Mot de passe</label>
+          <input type="password" id="register-password" placeholder="••••••••" required autocomplete="new-password">
+        </div>
+        <div class="form-group">
+          <label for="register-role">Rôle</label>
+          <select id="register-role">
+            <option value="user">Qualiticien / Ingénieur</option>
+            <option value="admin">Administrateur Qualité</option>
+          </select>
+        </div>
+        <div id="register-error" class="error-msg" style="display: none;"></div>
+        <button type="submit" class="btn btn-primary btn-block">Créer un compte</button>
+        <p class="auth-switch">Déjà inscrit ? <a href="#" id="show-login">Se connecter</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= MAIN APP CONTAINER ================= -->
+  <div id="app-container" class="app-layout" style="display: none;">
+    
+    <!-- SIDEBAR NAV -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <img src="/images/logo.png" alt="Logo entreprise" style="max-width: 24px; max-height: 24px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:none;"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <span>8D Quality Platform</span>
+      </div>
+
+      <nav class="sidebar-menu">
+        <button id="nav-dashboard" class="menu-item active">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+          <span>Tableau de bord</span>
+        </button>
+        
+        <button id="nav-claims" class="menu-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Réclamations</span>
+        </button>
+        
+        <button id="nav-new-8d" class="menu-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+          <span>Nouveau 8D</span>
+        </button>
+        
+        <button id="nav-profile" class="menu-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>Profil</span>
+        </button>
+
+        <button id="nav-admin" class="menu-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          <span>Admin</span>
+        </button>
+      </nav>
+
+      <!-- Current User Widget -->
+      <div class="sidebar-user">
+        <div class="user-avatar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </div>
+        <div class="user-info">
+          <span class="user-name" id="user-display-name">Qualité Admin</span>
+          <span class="user-role" id="user-display-role">Role: admin</span>
+        </div>
+        <button class="logout-btn" id="btn-logout" title="Se déconnecter">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+        </button>
+      </div>
+    </aside>
+
+    <!-- MAIN DISPLAY AREA -->
+    <main class="main-content">
+      
+      <!-- ================= 1. VIEW: DASHBOARD ================= -->
+      <section id="view-dashboard" class="content-view active">
+        <div class="view-header">
+          <div>
+            <h2>Tableau de bord qualité</h2>
+            <p class="welcome-text">Bienvenue, <span class="session-user-name">Qualité Admin</span> • Rôle : <span class="session-user-role">admin</span></p>
+          </div>
+          <button class="btn btn-secondary flex-center" id="btn-refresh-dashboard">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+            Rafraîchir
+          </button>
+        </div>
+
+        <!-- KPI Cards Grid -->
+        <div class="kpi-grid">
+          <div class="kpi-card blue">
+            <div class="kpi-content">
+              <span class="kpi-title">Total réclamations</span>
+              <span class="kpi-value" id="kpi-total">45</span>
+            </div>
+            <div class="kpi-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+          </div>
+
+          <div class="kpi-card yellow">
+            <div class="kpi-content">
+              <span class="kpi-title">En cours</span>
+              <span class="kpi-value" id="kpi-pending">42</span>
+            </div>
+            <div class="kpi-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+          </div>
+
+          <div class="kpi-card steel">
+            <div class="kpi-content">
+              <span class="kpi-title">Stellantis</span>
+              <span class="kpi-value" id="kpi-stellantis">40</span>
+            </div>
+            <div class="kpi-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+          </div>
+
+          <div class="kpi-card red-kpi">
+            <div class="kpi-content">
+              <span class="kpi-title">Renault</span>
+              <span class="kpi-value" id="kpi-renault">5</span>
+            </div>
+            <div class="kpi-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+            </div>
+          </div>
+
+          <div class="kpi-card danger">
+            <div class="kpi-content">
+              <span class="kpi-title">Actions en retard</span>
+              <span class="kpi-value" id="kpi-delayed">1</span>
+            </div>
+            <div class="kpi-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts-grid">
+          <div class="chart-card">
+            <h3>Répartition par étape</h3>
+            <div class="chart-container">
+              <canvas id="chart-steps"></canvas>
+            </div>
+          </div>
+          <div class="chart-card">
+            <h3>Réclamations par mois</h3>
+            <div class="chart-container">
+              <canvas id="chart-months"></canvas>
+            </div>
+          </div>
+          <div class="chart-card">
+            <h3>Réclamations par Client</h3>
+            <div class="chart-container">
+              <canvas id="chart-customers"></canvas>
+            </div>
+          </div>
+          <div class="chart-card">
+            <h3>Pareto : Défauts par produit</h3>
+            <div class="chart-container">
+              <canvas id="chart-pareto"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 2. VIEW: CLAIMS LIST ================= -->
+      <section id="view-claims" class="content-view">
+        <div class="view-header">
+          <div>
+            <h2>Liste des réclamations</h2>
+            <p id="claim-count-text">45 réclamations trouvées</p>
+          </div>
+          <div class="search-actions">
+            <input type="text" id="search-claims" placeholder="Rechercher une réclamation...">
+            <button class="btn btn-primary" id="btn-create-claim-redirect">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><path d="M12 5v14M5 12h14"/></svg>
+              + Nouveau 8D
+            </button>
+          </div>
+        </div>
+
+        <!-- Claims Table Card -->
+        <div class="table-card">
+          <table class="claims-table">
+            <thead>
+              <tr>
+                <th>N°</th>
+                <th>Who Answered</th>
+                <th>Plant</th>
+                <th>Claim Date</th>
+                <th>Official Date</th>
+                <th>Problem Description</th>
+                <th>Incident Level</th>
+                <th>Step</th>
+                <th>Status</th>
+                <th>Actions</th>
+                <th>Rapport</th>
+              </tr>
+            </thead>
+            <tbody id="claims-table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ================= 3. VIEW: CREATE NEW 8D ================= -->
+      <section id="view-new-8d" class="content-view">
+        <div class="view-header">
+          <div>
+            <h2>Créer un nouveau dossier 8D</h2>
+            <p>Initialisation de l'étape de Réception (D0)</p>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <form id="new-8d-form">
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label for="new-customer">Client *</label>
+                <select id="new-customer" required>
+                  <option value="">Sélectionnez un client...</option>
+                  <option value="Stellantis">Stellantis</option>
+                  <option value="Renault">Renault</option>
+                  <option value="Autre">Autre</option>
+                </select>
+              </div>
+              <div class="form-group col-6">
+                <label for="new-plant">Usine (Plant) *</label>
+                <select id="new-plant" required>
+                  <option value="">Sélectionnez une usine...</option>
+                  <option value="Tanger">Tanger</option>
+                  <option value="Tarnava">Tarnava</option>
+                  <option value="Zaragoza">Zaragoza</option>
+                  <option value="VIGO">VIGO</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label for="new-product">Référence Produit *</label>
+                <input type="text" id="new-product" placeholder="Ex: Condenser XL" required>
+              </div>
+              <div class="form-group col-6">
+                <label for="new-who-answered">Who Answered *</label>
+                <select id="new-who-answered" required>
+                  <!-- Populated dynamically with users -->
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-4">
+                <label for="new-urgency">Urgence *</label>
+                <select id="new-urgency" required>
+                  <option value="Low">Low</option>
+                  <option value="Medium" selected>Medium</option>
+                  <option value="High">High</option>
+                </select>
+              </div>
+              <div class="form-group col-4">
+                <label for="new-claim-date">Claim Date *</label>
+                <input type="date" id="new-claim-date" required>
+              </div>
+              <div class="form-group col-4">
+                <label for="new-deadline">Deadline (auto-calculée)</label>
+                <input type="text" id="new-deadline" readonly placeholder="Calculée à la saisie client">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-4">
+                <label for="new-official-date">Official Date</label>
+                <input type="date" id="new-official-date">
+              </div>
+              <div class="form-group col-4">
+                <label for="new-incident-level">Incident Level *</label>
+                <select id="new-incident-level" required>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="G1">G1</option>
+                  <option value="G2">G2</option>
+                </select>
+              </div>
+              <div class="form-group col-4">
+                <label for="new-warranty">Type *</label>
+                <select id="new-warranty" required>
+                  <option value="OKM">OKM</option>
+                  <option value="Warranty">Warranty</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="new-problem">Description du problème *</label>
+              <textarea id="new-problem" rows="4" placeholder="Description claire du défaut constaté..." required></textarea>
+            </div>
+
+            <div class="form-actions text-right">
+              <button type="button" class="btn btn-secondary" id="btn-cancel-create">Annuler</button>
+              <button type="submit" class="btn btn-primary">Créer le rapport 8D</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- ================= 4. VIEW: 8D WORKSPACE (STEPPER & FORMS) ================= -->
+      <section id="view-8d-workspace" class="content-view">
+        <div class="view-header">
+          <div class="workspace-header-details">
+            <button class="btn btn-icon-only" id="btn-back-to-claims" title="Retour aux réclamations">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div>
+              <h2 id="workspace-claim-id">Rapport 8D: 8D-2026-0045</h2>
+              <p id="workspace-claim-step">Étape : Réception (D0)</p>
+            </div>
+          </div>
+          <div class="workspace-actions">
+            <span class="modification-badge" id="workspace-last-modified">Modifié par : admin</span>
+            <button class="btn btn-secondary" id="btn-history-trigger">Historique</button>
+            <button class="btn btn-outline" id="btn-export-pdf">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              Exporter en PDF
+            </button>
+            <button class="btn btn-primary" id="btn-save-8d">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+              Sauvegarder
+            </button>
+          </div>
+        </div>
+
+        <!-- 8D Stepper Timeline -->
+        <div class="stepper-wrapper">
+          <div class="stepper-line"></div>
+          <div class="stepper-step active" data-step="0">
+            <div class="step-circle">0</div>
+            <span class="step-label">Réception (D0)</span>
+          </div>
+          <div class="stepper-step" data-step="1">
+            <div class="step-circle">1</div>
+            <span class="step-label">Équipe (D1)</span>
+          </div>
+          <div class="stepper-step" data-step="2">
+            <div class="step-circle">2</div>
+            <span class="step-label">Description (D2)</span>
+          </div>
+          <div class="stepper-step" data-step="3">
+            <div class="step-circle">3</div>
+            <span class="step-label">Confinement (D3)</span>
+          </div>
+          <div class="stepper-step" data-step="4">
+            <div class="step-circle">4</div>
+            <span class="step-label">Analyse (D4)</span>
+          </div>
+          <div class="stepper-step" data-step="5">
+            <div class="step-circle">5</div>
+            <span class="step-label">Correctifs (D5/D6)</span>
+          </div>
+          <div class="stepper-step" data-step="7">
+            <div class="step-circle">7</div>
+            <span class="step-label">Préventives (D7/D8)</span>
+          </div>
+          <div class="stepper-step" data-step="8">
+            <div class="step-circle">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="step-label">CLOSED</span>
+          </div>
+        </div>
+
+        <!-- WORKSPACE DYNAMIC CONTENT PANES -->
+        <div class="workspace-body">
+          
+          <!-- STEP 0: Reception (D0) -->
+          <div class="step-pane active" id="pane-step-0">
+            <h3>D0 - Réception & Informations initiales</h3>
+            <div class="form-row">
+              <div class="form-group col-4">
+                <label>Client</label>
+                <select id="ws-customer">
+                  <option value="">Non renseigné</option>
+                  <option value="Stellantis">Stellantis</option>
+                  <option value="Renault">Renault</option>
+                </select>
+              </div>
+              <div class="form-group col-4">
+                <label>Usine (Plant)</label>
+                <input type="text" id="ws-plant" readonly class="input-readonly">
+              </div>
+              <div class="form-group col-4">
+                <label>Référence Produit</label>
+                <input type="text" id="ws-product" readonly class="input-readonly">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-4">
+                <label>Qui a répondu (Who Answered)</label>
+                <select id="ws-who-answered"></select>
+              </div>
+              <div class="form-group col-4">
+                <label>Claim Date</label>
+                <input type="text" id="ws-claim-date" readonly class="input-readonly">
+              </div>
+              <div class="form-group col-4">
+                <label>Deadline (calculée)</label>
+                <input type="text" id="ws-deadline" readonly class="input-readonly">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-4">
+                <label>Official Date</label>
+                <input type="date" id="ws-official-date">
+              </div>
+              <div class="form-group col-4">
+                <label>Reception Date of Product</label>
+                <input type="date" id="ws-reception-date">
+              </div>
+              <div class="form-group col-4">
+                <label>Days Open</label>
+                <input type="number" id="ws-days-open" placeholder="Ex: 5">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label>Urgence</label>
+                <select id="ws-urgency">
+                  <option value="Low">Low</option>
+                  <option value="Medium">Medium</option>
+                  <option value="High">High</option>
+                </select>
+              </div>
+              <div class="form-group col-6">
+                <label>Type de garantie</label>
+                <select id="ws-warranty">
+                  <option value="OKM">OKM</option>
+                  <option value="Warranty">Warranty</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="section-divider">
+              <span>Indicateurs Qualité & Suivi</span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label>Incident Level</label>
+                <input type="text" id="ws-incident-level" placeholder="Ex: A, G1, G2...">
+              </div>
+              <div class="form-group col-6">
+                <label>Incident Number</label>
+                <input type="text" id="ws-incident-number" placeholder="Numéro incident">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label>Defect Count</label>
+                <input type="number" id="ws-defect-count" placeholder="Nombre de défauts">
+              </div>
+              <div class="form-group col-6">
+                <label>Real Cost</label>
+                <input type="text" id="ws-real-cost" placeholder="Coût réel (€/MAD)">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label>PACT Status</label>
+                <select id="ws-pact-status">
+                  <option value="">-</option>
+                  <option value="En cours">En cours</option>
+                  <option value="Terminé">Terminé</option>
+                  <option value="En retard">En retard</option>
+                </select>
+              </div>
+              <div class="form-group col-6">
+                <label>PAMT Status</label>
+                <select id="ws-pamt-status">
+                  <option value="">-</option>
+                  <option value="En cours">En cours</option>
+                  <option value="Terminé">Terminé</option>
+                  <option value="En retard">En retard</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label>Pre-analysis 24h</label>
+                <input type="date" id="ws-pre-analysis-24h">
+              </div>
+              <div class="form-group col-6">
+                <label>PACT 48h</label>
+                <input type="date" id="ws-pact-48h">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label>PAMT 15 Jours</label>
+                <input type="date" id="ws-pamt-15d">
+              </div>
+              <div class="form-group col-6">
+                <label>Eff Check After 34 Days</label>
+                <input type="date" id="ws-eff-check-34d">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label>Responsibility</label>
+                <input type="text" id="ws-responsibility" placeholder="Responsable / Cause">
+              </div>
+              <div class="form-group col-6">
+                <label>Recurrence</label>
+                <select id="ws-recurrence">
+                  <option value="">-</option>
+                  <option value="Oui">Oui</option>
+                  <option value="Non">Non</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 1: Team (D1) -->
+          <div class="step-pane" id="pane-step-1">
+            <h3>D1 - Constitution de l'équipe projet</h3>
+            <div class="form-group">
+              <label for="ws-team-leader">Chef de projet (Team Leader) *</label>
+              <input type="text" id="ws-team-leader" placeholder="Nom du responsable 8D...">
+            </div>
+            
+            <div class="team-section">
+              <label>Membres de l'équipe</label>
+              <div class="member-input-row">
+                <input type="text" id="ws-team-member-name" placeholder="Nom de l'équipier...">
+                <button type="button" class="btn btn-secondary" id="btn-add-team-member">Ajouter</button>
+              </div>
+              <ul class="team-list" id="ws-team-members-list">
+                <!-- Dynamically populated -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- STEP 2: Description & Risk Matrix (D2) -->
+          <div class="step-pane" id="pane-step-2">
+            <h3>D2 - Description du problème & Analyse de Risque</h3>
+            <div class="form-group">
+              <label for="ws-problem-desc">Description du problème (Spécifications de la réclamation) *</label>
+              <textarea id="ws-problem-desc" rows="5" placeholder="Saisir la description complète du défaut..."></textarea>
+            </div>
+
+            <div class="risk-matrix-wrapper">
+              <div class="risk-matrix-info">
+                <h4>Matrice de Risque 8D</h4>
+                <p>Déterminez la criticité en sélectionnant l'intersection de la <strong>Gravité (Sévérité)</strong> et de l'<strong>Occurrence</strong>.</p>
+                <div class="risk-summary">
+                  <div>Gravité : <strong id="risk-val-severity">-</strong></div>
+                  <div>Occurrence : <strong id="risk-val-occurrence">-</strong></div>
+                  <div>Détectabilité : 
+                    <select id="ws-risk-detection" style="width: 80px; display: inline-block; margin-left: 5px;">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                  <div class="rpn-badge">Indice de Priorité de Risque (RPN) : <span id="risk-val-rpn">0</span></div>
+                </div>
+              </div>
+
+              <!-- 5x5 Grid Selector -->
+              <div class="matrix-grid-container">
+                <div class="matrix-axis-y-label">OCCURRENCE</div>
+                <div class="matrix-grid-body">
+                  <div class="matrix-header-row">
+                    <div class="matrix-corner"></div>
+                    <div class="matrix-header-cell">1</div>
+                    <div class="matrix-header-cell">2</div>
+                    <div class="matrix-header-cell">3</div>
+                    <div class="matrix-header-cell">4</div>
+                    <div class="matrix-header-cell">5</div>
+                  </div>
+                  <!-- Occurrence Rows 5 to 1 -->
+                  <div class="matrix-row" data-occ="5">
+                    <div class="matrix-row-label">5</div>
+                    <div class="matrix-cell yellow-cell" data-sev="1">5</div>
+                    <div class="matrix-cell orange-cell" data-sev="2">10</div>
+                    <div class="matrix-cell red-cell" data-sev="3">15</div>
+                    <div class="matrix-cell red-cell" data-sev="4">20</div>
+                    <div class="matrix-cell red-cell" data-sev="5">25</div>
+                  </div>
+                  <div class="matrix-row" data-occ="4">
+                    <div class="matrix-row-label">4</div>
+                    <div class="matrix-cell green-cell" data-sev="1">4</div>
+                    <div class="matrix-cell yellow-cell" data-sev="2">8</div>
+                    <div class="matrix-cell orange-cell" data-sev="3">12</div>
+                    <div class="matrix-cell red-cell" data-sev="4">16</div>
+                    <div class="matrix-cell red-cell" data-sev="5">20</div>
+                  </div>
+                  <div class="matrix-row" data-occ="3">
+                    <div class="matrix-row-label">3</div>
+                    <div class="matrix-cell green-cell" data-sev="1">3</div>
+                    <div class="matrix-cell yellow-cell" data-sev="2">6</div>
+                    <div class="matrix-cell yellow-cell" data-sev="3">9</div>
+                    <div class="matrix-cell orange-cell" data-sev="4">12</div>
+                    <div class="matrix-cell red-cell" data-sev="5">15</div>
+                  </div>
+                  <div class="matrix-row" data-occ="2">
+                    <div class="matrix-row-label">2</div>
+                    <div class="matrix-cell green-cell" data-sev="1">2</div>
+                    <div class="matrix-cell green-cell" data-sev="2">4</div>
+                    <div class="matrix-cell yellow-cell" data-sev="3">6</div>
+                    <div class="matrix-cell yellow-cell" data-sev="4">8</div>
+                    <div class="matrix-cell orange-cell" data-sev="5">10</div>
+                  </div>
+                  <div class="matrix-row" data-occ="1">
+                    <div class="matrix-row-label">1</div>
+                    <div class="matrix-cell green-cell" data-sev="1">1</div>
+                    <div class="matrix-cell green-cell" data-sev="2">2</div>
+                    <div class="matrix-cell green-cell" data-sev="3">3</div>
+                    <div class="matrix-cell green-cell" data-sev="4">4</div>
+                    <div class="matrix-cell yellow-cell" data-sev="5">5</div>
+                  </div>
+                  <div class="matrix-axis-x-label">GRAVITÉ (SÉVÉRITÉ)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3: Containment Actions (D3) -->
+          <div class="step-pane" id="pane-step-3">
+            <h3>D3 - Actions de confinement immédiates</h3>
+            
+            <div class="d3-bl-input-wrapper">
+              <div class="form-group col-4" style="margin-bottom: 0;">
+                <label for="ws-d3-bl">Nbr de BL (N° de Bon de Livraison) :</label>
+                <input type="text" id="ws-d3-bl" placeholder="Ex: BL-9812">
+              </div>
+            </div>
+
+            <div class="actions-creation-row">
+              <input type="text" id="new-d3-action-desc" class="flex-grow" placeholder="Description de l'action de tri/confinement...">
+              <input type="text" id="new-d3-action-who" placeholder="Qui ?">
+              <input type="date" id="new-d3-action-when">
+              <select id="new-d3-action-status">
+                <option value="Planifié">Planifié</option>
+                <option value="En cours">En cours</option>
+                <option value="Fait">Fait</option>
+              </select>
+              <button type="button" class="btn btn-secondary" id="btn-add-d3-action">Ajouter l'action</button>
+            </div>
+
+            <!-- Containment Actions Table -->
+            <div class="table-card" style="margin-top: 15px;">
+              <table class="claims-table compact-table">
+                <thead>
+                  <tr>
+                    <th>Description de l'action</th>
+                    <th>Nbr de BL</th>
+                    <th>Responsable</th>
+                    <th>Date</th>
+                    <th>Statut</th>
+                    <th>Photo d'action</th>
+                    <th style="width: 80px;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="ws-d3-actions-table-body">
+                  <!-- Dynamically populated -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- STEP 4: Root Cause Analysis (D4) -->
+          <div class="step-pane" id="pane-step-4">
+            <h3>D4 - Analyse des causes racines</h3>
+            
+            <!-- ISHIKAWA DIAGRAM -->
+            <div class="ishikawa-wrapper">
+              <div class="ishikawa-title">Diagramme de causes à effets (Ishikawa)</div>
+              
+              <div class="ishikawa-diagram">
+                <!-- Spine & Head -->
+                <div class="fish-spine"></div>
+                <div class="fish-head">
+                  <div class="fish-head-text">DÉFAUT</div>
+                </div>
+
+                <!-- Top bones (Matière, Milieu, Méthode) -->
+                <div class="fish-bones-top">
+                  <div class="fish-bone matiere">
+                    <span class="bone-title">MATIÈRE</span>
+                    <ul class="bone-list" id="ishikawa-matiere-list"></ul>
+                    <div class="bone-input-row">
+                      <input type="text" placeholder="Ajouter..." id="input-ishikawa-matiere">
+                      <button class="btn-bone-add" data-cat="matiere">+</button>
+                    </div>
+                  </div>
+                  
+                  <div class="fish-bone milieu">
+                    <span class="bone-title">MILIEU</span>
+                    <ul class="bone-list" id="ishikawa-milieu-list"></ul>
+                    <div class="bone-input-row">
+                      <input type="text" placeholder="Ajouter..." id="input-ishikawa-milieu">
+                      <button class="btn-bone-add" data-cat="milieu">+</button>
+                    </div>
+                  </div>
+                  
+                  <div class="fish-bone methode">
+                    <span class="bone-title">MÉTHODE</span>
+                    <ul class="bone-list" id="ishikawa-methode-list"></ul>
+                    <div class="bone-input-row">
+                      <input type="text" placeholder="Ajouter..." id="input-ishikawa-methode">
+                      <button class="btn-bone-add" data-cat="methode">+</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom bones (Machine, Main d'œuvre, Mesure) -->
+                <div class="fish-bones-bottom">
+                  <div class="fish-bone machine">
+                    <span class="bone-title">MACHINE</span>
+                    <ul class="bone-list" id="ishikawa-machine-list"></ul>
+                    <div class="bone-input-row">
+                      <input type="text" placeholder="Ajouter..." id="input-ishikawa-machine">
+                      <button class="btn-bone-add" data-cat="machine">+</button>
+                    </div>
+                  </div>
+                  
+                  <div class="fish-bone mainOeuvre">
+                    <span class="bone-title">MAIN D'ŒUVRE</span>
+                    <ul class="bone-list" id="ishikawa-mainOeuvre-list"></ul>
+                    <div class="bone-input-row">
+                      <input type="text" placeholder="Ajouter..." id="input-ishikawa-mainOeuvre">
+                      <button class="btn-bone-add" data-cat="mainOeuvre">+</button>
+                    </div>
+                  </div>
+                  
+                  <div class="fish-bone mesure">
+                    <span class="bone-title">MESURE</span>
+                    <ul class="bone-list" id="ishikawa-mesure-list"></ul>
+                    <div class="bone-input-row">
+                      <input type="text" placeholder="Ajouter..." id="input-ishikawa-mesure">
+                      <button class="btn-bone-add" data-cat="mesure">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 WHYS SECTION (exactly 3 tables: Occurrence, Non-detection, System) -->
+            <div class="five-whys-container" style="margin-top: 30px;">
+              <div class="five-whys-header">Analyse des 5 Pourquoi</div>
+              <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">
+                Identifiez les causes racines à l'aide de 3 tables d'analyse distinctes : l'apparition (Occurrence), la non-détection et la défaillance système. Utilisez le bouton <strong>+</strong> pour rajouter plusieurs causes au même niveau.
+              </p>
+
+              <!-- Occurrence Table -->
+              <div class="why-table-card" id="why-table-occurrence">
+                <div class="why-table-title occurrence">Axe 1 : Apparition (Occurrence)</div>
+                <div class="why-rows-wrapper" data-path="Occurrence">
+                  <!-- Generated dynamically in app.js -->
+                </div>
+                <div class="why-footer-fields">
+                  <div class="form-group">
+                    <label>Why other than root cause (Autres causes identifiées non critiques) :</label>
+                    <input type="text" class="ws-why-other-causes" data-path="Occurrence" placeholder="Ex: Qualité lubrifiant limite...">
+                  </div>
+                  <div class="form-group">
+                    <label>Cause Racine Finale (Root Cause) - Déclenchera l'action corrective * :</label>
+                    <input type="text" class="ws-why-root-cause" data-path="Occurrence" placeholder="Saisir la cause racine validée...">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Non-Detection Table -->
+              <div class="why-table-card" id="why-table-detection" style="margin-top: 25px;">
+                <div class="why-table-title detection">Axe 2 : Non-Détection</div>
+                <div class="why-rows-wrapper" data-path="Non-détection">
+                  <!-- Generated dynamically in app.js -->
+                </div>
+                <div class="why-footer-fields">
+                  <div class="form-group">
+                    <label>Why other than root cause (Autres causes identifiées non critiques) :</label>
+                    <input type="text" class="ws-why-other-causes" data-path="Non-détection" placeholder="Ex: Vitesse nominale non testée...">
+                  </div>
+                  <div class="form-group">
+                    <label>Cause Racine Finale (Root Cause) - Déclenchera l'action corrective * :</label>
+                    <input type="text" class="ws-why-root-cause" data-path="Non-détection" placeholder="Saisir la cause racine validée...">
+                  </div>
+                </div>
+              </div>
+
+              <!-- System Table -->
+              <div class="why-table-card" id="why-table-system" style="margin-top: 25px;">
+                <div class="why-table-title system">Axe 3 : Système</div>
+                <div class="why-rows-wrapper" data-path="Système">
+                  <!-- Generated dynamically in app.js -->
+                </div>
+                <div class="why-footer-fields">
+                  <div class="form-group">
+                    <label>Why other than root cause (Autres causes identifiées non critiques) :</label>
+                    <input type="text" class="ws-why-other-causes" data-path="Système" placeholder="Ex: Formation AMDEC trop générique...">
+                  </div>
+                  <div class="form-group">
+                    <label>Cause Racine Finale (Root Cause) - Déclenchera l'action corrective * :</label>
+                    <input type="text" class="ws-why-root-cause" data-path="Système" placeholder="Saisir la cause racine validée...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 5: Corrective Actions (D5/D6) -->
+          <div class="step-pane" id="pane-step-5">
+            <h3>D5/D6 - Actions correctives permanentes & Suivi de validation</h3>
+            
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 15px;">
+              Les solutions et actions correctives sont automatiquement initialisées à partir des <strong>Causes Racines</strong> définies à l'étape D4. Vous pouvez compléter le plan ou ajouter de nouvelles actions de validation.
+            </p>
+
+            <div class="actions-creation-row">
+              <input type="text" id="new-d5-action-desc" class="flex-grow" placeholder="Description de l'action corrective...">
+              <input type="text" id="new-d5-action-source" placeholder="Cause racine source...">
+              <input type="text" id="new-d5-action-who" placeholder="Qui ?">
+              <input type="date" id="new-d5-action-when">
+              <select id="new-d5-action-status">
+                <option value="Planifié">Planifié</option>
+                <option value="En cours">En cours</option>
+                <option value="Fait">Fait</option>
+              </select>
+              <button type="button" class="btn btn-secondary" id="btn-add-d5-action">Ajouter</button>
+            </div>
+
+            <!-- Corrective Actions Table -->
+            <div class="table-card" style="margin-top: 15px;">
+              <table class="claims-table compact-table">
+                <thead>
+                  <tr>
+                    <th>Description de l'action corrective</th>
+                    <th>Cause Racine Associée (Source)</th>
+                    <th>Responsable</th>
+                    <th>Date Planifiée</th>
+                    <th>Statut</th>
+                    <th style="width: 80px;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="ws-d5-actions-table-body">
+                  <!-- Dynamically populated -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- STEP 7: Preventive Actions (D7/D8) -->
+          <div class="step-pane" id="pane-step-7">
+            <h3>D7/D8 - Actions préventives & Clôture</h3>
+            
+            <h4>Actions Préventives (D7)</h4>
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 15px;">
+              Mettez en place des actions pour éviter la réapparition du problème dans d'autres secteurs ou projets similaires (Standardisation).
+            </p>
+
+            <div class="actions-creation-row">
+              <input type="text" id="new-d7-action-desc" class="flex-grow" placeholder="Description de l'action préventive (Ex: MAJ AMDEC standard)...">
+              <input type="text" id="new-d7-action-who" placeholder="Qui ?">
+              <input type="date" id="new-d7-action-when">
+              <button type="button" class="btn btn-secondary" id="btn-add-d7-action">Ajouter l'action</button>
+            </div>
+
+            <div class="table-card" style="margin-top: 15px; margin-bottom: 30px;">
+              <table class="claims-table compact-table">
+                <thead>
+                  <tr>
+                    <th>Description de l'action préventive</th>
+                    <th>Responsable</th>
+                    <th>Date Planifiée</th>
+                    <th style="width: 80px;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="ws-d7-actions-table-body">
+                  <!-- Dynamically populated -->
+                </tbody>
+              </table>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 30px 0;">
+
+            <h4>Clôture & Reconnaissance de l'équipe (D8)</h4>
+            
+            <div class="form-row" style="margin-top: 15px;">
+              <div class="form-group col-6">
+                <label for="ws-d8-closure-date">Date de clôture effective</label>
+                <input type="date" id="ws-d8-closure-date">
+              </div>
+              <div class="form-group col-6" style="display: flex; align-items: center; padding-top: 25px;">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="ws-d8-team-recognized">
+                  <span class="checkmark"></span>
+                  L'équipe a été félicitée et récompensée
+                </label>
+              </div>
+            </div>
+
+            <!-- Congratulatory Banner -->
+            <div id="d8-congratulations-banner" class="congrats-banner" style="display: none;">
+              <div class="congrats-icon">🎉</div>
+              <div style="flex: 1;">
+                <h5>Félicitations à toute l'équipe !</h5>
+                <p>Le dossier 8D est résolu avec succès. Les actions ont été standardisées et l'équipe a été officiellement reconnue pour son travail.</p>
+              </div>
+              <button class="btn btn-primary" id="btn-export-pdf-d8" style="white-space: nowrap;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                Exporter le dossier 8D complet en PDF
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- WORKSPACE FOOTER ACTIONS -->
+        <div class="workspace-footer">
+          <div class="step-validation-wrapper">
+            <label class="checkbox-container select-large-label">
+              <input type="checkbox" id="ws-step-validate-checkbox">
+              <span class="checkmark"></span>
+              <strong>Valider l'étape en cours</strong>
+            </label>
+            <span class="validation-info-text">Valider cette étape débloquera l'étape suivante et fera progresser le statut de la réclamation.</span>
+          </div>
+          <div class="navigation-buttons">
+            <button class="btn btn-secondary" id="btn-ws-prev">Étape Précédente</button>
+            <button class="btn btn-primary" id="btn-ws-next">Étape Suivante</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 5. VIEW: PROFILE ================= -->
+      <section id="view-profile" class="content-view">
+        <div class="view-header">
+          <h2>Profil utilisateur</h2>
+          <p>Gérez vos informations et vos préférences de compte</p>
+        </div>
+
+        <div class="form-card profile-card">
+          <div class="profile-header-widget">
+            <div class="profile-avatar">Q</div>
+            <div>
+              <h3 id="profile-name">Qualité Admin</h3>
+              <p>Rôle système : <strong id="profile-role">admin</strong></p>
+            </div>
+          </div>
+          <div style="margin-top: 25px;">
+            <div class="form-group">
+              <label>Nom d'utilisateur</label>
+              <input type="text" id="profile-username" readonly class="input-readonly">
+            </div>
+            <div class="form-group">
+              <label>Service / Département</label>
+              <input type="text" value="Département Assurance Qualité Clients" readonly class="input-readonly">
+            </div>
+            <div class="form-group">
+              <label>Date de création du compte</label>
+              <input type="text" value="05/08/2026" readonly class="input-readonly">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 6. VIEW: ADMIN ================= -->
+      <section id="view-admin" class="content-view">
+        <div class="view-header">
+          <h2>Administration de la plateforme</h2>
+          <p>Outils de gestion globale de la base de données et des accès</p>
+        </div>
+
+        <div class="admin-grid">
+          <div class="form-card">
+            <h3>Liste des utilisateurs inscrits</h3>
+            <div class="table-card" style="margin-top: 15px;">
+              <table class="claims-table compact-table">
+                <thead>
+                  <tr>
+                    <th>Nom Complet</th>
+                    <th>Nom d'utilisateur</th>
+                    <th>Rôle</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-users-list-body">
+                  <!-- Dynamically populated -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h3>Actions d'administration</h3>
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">
+              Ces actions modifient globalement l'état de la plateforme et de la base de données.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+              <button class="btn btn-secondary btn-block text-left" id="btn-admin-reset">
+                <strong>Réinitialiser la base de données</strong>
+                <span style="display: block; font-size: 11px; font-weight: normal; color: var(--text-muted); margin-top: 2px;">
+                  Re-génère les 45 réclamations de démonstration d'usine d'origine.
+                </span>
+              </button>
+              <button class="btn btn-secondary btn-block text-left" id="btn-admin-export">
+                <strong>Exporter les données (JSON)</strong>
+                <span style="display: block; font-size: 11px; font-weight: normal; color: var(--text-muted); margin-top: 2px;">
+                  Télécharge un fichier JSON contenant toutes les réclamations et utilisateurs.
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ================= MODAL: MODIFICATION HISTORY ================= -->
+  <div id="history-modal" class="modal-wrapper" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Historique des modifications</h3>
+        <button class="btn-close-modal" id="btn-close-history-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ul class="history-timeline" id="history-timeline-list">
+          <!-- Dynamically populated -->
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="btn-close-history-modal-btn">Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script implementation -->
+  <script src="js/app.js"></script>
+</body>
+</html>

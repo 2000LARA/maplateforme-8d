@@ -1,0 +1,3963 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "$2b$10$XgTvusRuuOAGEH0Z8ezWg.GbxF/uaiSHsmlRj.XyYh2iii3C.HtOC",
+      "name": "Qualité Admin",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "bilal",
+      "password": "password",
+      "name": "Bilal En-Neassi",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "username": "manal",
+      "password": "password",
+      "name": "Manal Bernoussi",
+      "role": "user"
+    },
+    {
+      "id": "1",
+      "username": "testsec",
+      "password": "$2b$10$8ar4Kyzqtc3gFgtN5H5GwObtabHk5jxecgSmO9zTFFMZ/izOFsayO",
+      "name": "Test Sec",
+      "role": "user"
+    },
+    {
+      "id": "5",
+      "username": "EYA",
+      "password": "$2b$10$DApjIs0KLm7S41UinlqPOeqCEI2Os38HEJPjxDMnrh61rfqmZ5aPO",
+      "name": "EYA",
+      "role": "user"
+    }
+  ],
+  "claims": [
+    {
+      "id": "QAN FV6 2026 263",
+      "customer": "",
+      "plant": "VIGO",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "15/01/2026",
+      "deadline": "",
+      "officialDate": "22/01/2026",
+      "problemDescription": "Pipe with crack",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "22/01/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 2,
+        "defectCount": 1,
+        "realCost": 1647,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Supplier",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Pipe with crack",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts), réclamation transmise au fournisseur (08–15/01/2026).",
+            "who": "Manal Bernoussi",
+            "when": "15/01/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [
+            "Fissure d'origine fournisseur (matière première) ; défaut non détecté par les pinces ATEQ ; risque non couvert par le plan de contrôle. 8D refusé, en attente de retour fournisseur."
+          ],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Pince ATEQ envoyée au fournisseur pour modification (détection fuite tête de tube) ; création d'un master de validation toutes les 4h ; 8D toujours en attente.",
+            "who": "Manal Bernoussi",
+            "when": "22/01/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC 764 2026 563",
+      "customer": "",
+      "plant": "Tarnava",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "30/01/2026",
+      "deadline": "",
+      "officialDate": "02/02/2026",
+      "problemDescription": "Condenser leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "CLOSED",
+      "currentStep": 8,
+      "history": [],
+      "d0": {
+        "officialDate": "02/02/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 3,
+        "defectCount": 1,
+        "realCost": 2005,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "Ok",
+        "responsibility": "Rejected ",
+        "recurrence": "No"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Condenser leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (30/01/2026).",
+            "who": "Manal Bernoussi",
+            "when": "30/01/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [
+            "Défaut d'application d'huile lors de l'assemblage du couvercle ; déformation par choc mécanique après le test hélium ; checklist sans vérification de l'huile."
+          ],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Formation opérateurs (lubrification/manutention) ; standards visuels ajoutés ; contrôle GP12 sur marquage du couvercle ; marquage pièce pour double contrôle.",
+            "who": "Manal Bernoussi",
+            "when": "02/02/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Ok",
+            "who": "Manal Bernoussi",
+            "when": "07/04/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d8": {
+        "closureDate": "07/04/2026",
+        "teamRecognized": true
+      }
+    },
+    {
+      "id": "QAN FV6 2026 869",
+      "customer": "",
+      "plant": "Vigo",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "10/02/2026",
+      "deadline": "",
+      "officialDate": "10/02/2026",
+      "problemDescription": "Diameter of the flange NOK",
+      "incidentLevel": "E1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "10/02/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "E1",
+        "incidentNumber": 4,
+        "defectCount": 1,
+        "realCost": 2220,
+        "pactStatus": "",
+        "pamtStatus": "",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Process",
+        "recurrence": "No"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Diameter of the flange NOK",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (10/02/2026).",
+            "who": "Manal Bernoussi",
+            "when": "10/02/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [
+            "Quantité d'huile insuffisante dans la bride ; JES ne précisait pas la quantité d'huile ; contrôle huile non vérifié."
+          ],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Détermination et mise à jour du JES avec la quantité d'huile suffisante (Ingénieur Qualité, mars 2026).",
+            "who": "Manal Bernoussi",
+            "when": "10/02/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC VB5 2026 49",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "08/01/2026",
+      "deadline": "",
+      "officialDate": "12/02/2026",
+      "problemDescription": "Power regulator",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "12/02/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 1,
+        "defectCount": 1,
+        "realCost": 2149,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Rejected ",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Power regulator",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts), réclamation transmise au fournisseur (08/01/2026).",
+            "who": "Manal Bernoussi",
+            "when": "08/01/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [
+            "Matière première non conforme, problème fournisseur ; pièce conforme au premier passage en interne."
+          ],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Réclamation transmise au fournisseur ; rejetée par celui-ci (08/01/2026).",
+            "who": "Manal Bernoussi",
+            "when": "12/02/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 1018",
+      "customer": "",
+      "plant": "Vigo",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "17/02/2026",
+      "deadline": "",
+      "officialDate": "18/02/2026",
+      "problemDescription": "Terminal bad insertion",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "18/02/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 6,
+        "defectCount": 1,
+        "realCost": 1647,
+        "pactStatus": "A",
+        "pamtStatus": "",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Supplier",
+        "recurrence": "No"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Terminal bad insertion",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts), réclamation transmise au fournisseur (17/02/2026).",
+            "who": "Manal Bernoussi",
+            "when": "17/02/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [
+            "Problème fournisseur (matière première, insertion terminal) ; 8D fournisseur refusé (analyse insuffisante)."
+          ],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "8D fournisseur reçu mais refusé de nouveau pour analyse/plan d'action insuffisant (03/03/2026).",
+            "who": "Manal Bernoussi",
+            "when": "18/02/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 874",
+      "customer": "",
+      "plant": "Vigo",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "10/02/2026",
+      "deadline": "",
+      "officialDate": "23/02/2026",
+      "problemDescription": "Expansion valve blocked",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "23/02/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 5,
+        "defectCount": 1,
+        "realCost": 1647,
+        "pactStatus": "",
+        "pamtStatus": "",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Supplier",
+        "recurrence": "Yes"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Expansion valve blocked",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts), réclamation transmise au fournisseur (10/02/2026).",
+            "who": "Manal Bernoussi",
+            "when": "10/02/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [
+            "Problème fournisseur (matière première), non clair selon 8D fournisseur ; cause racine systémique manquante."
+          ],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "8D fournisseur reçu mais refusé pour analyse/plan d'action insuffisant (13/03/2026).",
+            "who": "Manal Bernoussi",
+            "when": "23/02/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 1158",
+      "customer": "",
+      "plant": "Vigo",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "23/02/2026",
+      "deadline": "",
+      "officialDate": "09/03/2026",
+      "problemDescription": "Condenser leakage-Flange",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "09/03/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 7,
+        "defectCount": 1,
+        "realCost": 1576,
+        "pactStatus": "A",
+        "pamtStatus": "",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Process",
+        "recurrence": "No"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Condenser leakage-Flange",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (23/02/2026).",
+            "who": "Manal Bernoussi",
+            "when": "23/02/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [
+            "Bras de fixation de la bride/collecteur mal sécurisé ; défaut apparaissant par vibration/stress après test hélium ; risque non identifié par PFMEA/LPA."
+          ],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Bras de pression refixé/sécurisé ; contrôles opérateur/qualité ajoutés au démarrage et toutes les 2h ; contrôle visuel du flux ajouté ; JES mis à jour ; fréquence de maintenance préventive augmentée.",
+            "who": "Manal Bernoussi",
+            "when": "09/03/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 1187",
+      "customer": "",
+      "plant": "ViIGO",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "24/02/2026",
+      "deadline": "",
+      "officialDate": "09/03/2026",
+      "problemDescription": "Blower vibration",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "09/03/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 8,
+        "defectCount": 1,
+        "realCost": 1504,
+        "pactStatus": "A",
+        "pamtStatus": "",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "NTF",
+        "recurrence": "No"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Blower vibration",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (24/02/2026).",
+            "who": "Manal Bernoussi",
+            "when": "24/02/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Pièce conforme.",
+            "who": "Manal Bernoussi",
+            "when": "09/03/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN VB5 2026 939",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "01/03/2026",
+      "deadline": "",
+      "officialDate": "09/03/2026",
+      "problemDescription": "Evaporator blocked",
+      "incidentLevel": "D",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "09/03/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "D",
+        "incidentNumber": 10,
+        "defectCount": 1,
+        "realCost": 1647,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Process",
+        "recurrence": "No"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Evaporator blocked",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (01/03/2026).",
+            "who": "Manal Bernoussi",
+            "when": "01/03/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [
+            "Position de flamme de brasage incorrecte ; gabarit de test de blocage défaillant ; checklist maintenance N1 sans vérification du gabarit."
+          ],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Position de flamme réglée/verrouillée ; gabarit réparé ; checklist N1 mise à jour ; formation opérateurs ; reformation au standard de soudure.",
+            "who": "Manal Bernoussi",
+            "when": "09/03/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 1894",
+      "customer": "",
+      "plant": "VIGO",
+      "productReference": "",
+      "whoAnswered": "MANAL",
+      "claimDate": "18/03/2026",
+      "deadline": "",
+      "officialDate": "25/03/2026",
+      "problemDescription": "Condenser leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "25/03/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 11,
+        "defectCount": 1,
+        "realCost": 1504,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Rejected ",
+        "recurrence": "No"
+      },
+      "d1": {
+        "teamLeader": "MANAL",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Condenser leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (18/03/2026).",
+            "who": "MANAL",
+            "when": "18/03/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Double contrôle (logistique+qualité) avant expédition ; contrôle de l'état de l'emballage ; contrôle visuel OK/NOK du collecteur avant expédition.",
+            "who": "MANAL",
+            "when": "25/03/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 1634",
+      "customer": "",
+      "plant": "VIGO",
+      "productReference": "",
+      "whoAnswered": "MANAL",
+      "claimDate": "11/03/2026",
+      "deadline": "",
+      "officialDate": "01/04/2026",
+      "problemDescription": "Solar sensor doesn't work",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "01/04/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 12,
+        "defectCount": 1,
+        "realCost": 1647,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Supplier",
+        "recurrence": "Yes"
+      },
+      "d1": {
+        "teamLeader": "MANAL",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Solar sensor doesn't work",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (11/03/2026).",
+            "who": "MANAL",
+            "when": "11/03/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [
+            "Problème fournisseur : terminal desserré/mal positionné, broches ouvertes ; pièce OK au test initial ; rapport 8D manquant."
+          ],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "8D fournisseur reçu mais refusé.",
+            "who": "MANAL",
+            "when": "01/04/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 1709",
+      "customer": "",
+      "plant": "VIGO",
+      "productReference": "",
+      "whoAnswered": "MANAL",
+      "claimDate": "18/03/2026",
+      "deadline": "",
+      "officialDate": "01/04/2026",
+      "problemDescription": "Condenser leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "01/04/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 13,
+        "defectCount": "",
+        "realCost": 1504,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Rejected ",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "MANAL",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Condenser leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (18/03/2026).",
+            "who": "MANAL",
+            "when": "18/03/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [
+            "Déformation du collecteur pendant la manutention → fissure de soudure/fuite ; absence de standard/aide visuelle de manutention."
+          ],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Contrôle de l'état de l'emballage avant expédition ; contrôle visuel OK/NOK du collecteur ; double contrôle (logistique+qualité) avant expédition.",
+            "who": "MANAL",
+            "when": "01/04/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC VB5 2026 985",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "09/03/2026",
+      "deadline": "",
+      "officialDate": "09/04/2026",
+      "problemDescription": "Blower vibration",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "09/04/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 15,
+        "defectCount": 3,
+        "realCost": 2149,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "NTF",
+        "recurrence": ""
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Blower vibration",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (09/03/2026).",
+            "who": "Manal Bernoussi",
+            "when": "09/03/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Pièce conforme.",
+            "who": "Manal Bernoussi",
+            "when": "09/04/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC VB5 2026 1026",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "11/03/2026",
+      "deadline": "",
+      "officialDate": "16/04/2026",
+      "problemDescription": "Blower vibration",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "16/04/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 14,
+        "defectCount": 3,
+        "realCost": "",
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "NTF",
+        "recurrence": "No"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Blower vibration",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (11/03/2026).",
+            "who": "Manal Bernoussi",
+            "when": "11/03/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Pièce conforme.",
+            "who": "Manal Bernoussi",
+            "when": "16/04/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN 824 2026 568",
+      "customer": "",
+      "plant": "Madrid",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "27/04/2026",
+      "deadline": "",
+      "officialDate": "27/04/2026",
+      "problemDescription": "Condenser Deformed",
+      "incidentLevel": "D",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "27/04/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "D",
+        "incidentNumber": 21,
+        "defectCount": 1,
+        "realCost": 1646,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Rejected ",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Condenser Deformed",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (27/04/2026).",
+            "who": "Manal Bernoussi",
+            "when": "27/04/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Pièce conforme.",
+            "who": "Manal Bernoussi",
+            "when": "27/04/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 3334",
+      "customer": "",
+      "plant": "VIGO",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "29/04/2026",
+      "deadline": "",
+      "officialDate": "29/04/2026",
+      "problemDescription": "Blower vibration",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "29/04/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 20,
+        "defectCount": 1,
+        "realCost": 1360,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "NTF",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Blower vibration",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (29/04/2026).",
+            "who": "Manal Bernoussi",
+            "when": "29/04/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Fournisseur informé ; élimination des chutes demandée avant livraison ; contrôle visuel à réception ajouté ; contrôle visuel des corps étrangers dans l'admission ; standard 5S mis à jour au poste.",
+            "who": "Manal Bernoussi",
+            "when": "29/04/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC VB5 2026 1284",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "26/03/2026",
+      "deadline": "",
+      "officialDate": "04/05/2026",
+      "problemDescription": "Blower vibration",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "04/05/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 15,
+        "defectCount": 1,
+        "realCost": 2149,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "NTF",
+        "recurrence": "Yes"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Blower vibration",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (26/03/2026).",
+            "who": "Manal Bernoussi",
+            "when": "26/03/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "NTF (défaut non reproduit).",
+            "who": "Manal Bernoussi",
+            "when": "04/05/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 3181",
+      "customer": "",
+      "plant": "VIGO",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "27/04/2026",
+      "deadline": "",
+      "officialDate": "04/05/2026",
+      "problemDescription": "Condenser leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "04/05/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 19,
+        "defectCount": 1,
+        "realCost": 2435,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Process",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Condenser leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (27/04/2026).",
+            "who": "Manal Bernoussi",
+            "when": "27/04/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [
+            "Bras de fixation bride/collecteur mal sécurisé ; défaut par vibration/stress après test hélium ; risque non couvert par PFMEA/LPA."
+          ],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Bras de pression refixé/sécurisé ; contrôles au démarrage et toutes les 2h ; contrôle visuel du flux ajouté ; JES mis à jour ; fréquence de maintenance préventive augmentée.",
+            "who": "Manal Bernoussi",
+            "when": "04/05/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 3457",
+      "customer": "",
+      "plant": "VIGO",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "04/05/2026",
+      "deadline": "",
+      "officialDate": "04/05/2026",
+      "problemDescription": "Mislabeling condenser",
+      "incidentLevel": "E2",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "04/05/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "E2",
+        "incidentNumber": 18,
+        "defectCount": 1,
+        "realCost": 1074,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "logistics",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Mislabeling condenser",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (04/05/2026).",
+            "who": "Manal Bernoussi",
+            "when": "04/05/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [
+            "Erreur lors de l'impression finale des étiquettes ; opérateurs non sensibilisés à la cohérence référence client/interne ; absence de processus de vérification standardisé."
+          ],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Préparation des deux références séparée avec identification claire ; process de gestion des étiquettes modifié pour éviter la double manipulation ; vérification de la référence avant manutention ; audits toutes les 4h ajoutés.",
+            "who": "Manal Bernoussi",
+            "when": "04/05/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC WB5 2026 1221",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "10/04/2026",
+      "deadline": "",
+      "officialDate": "11/05/2026",
+      "problemDescription": "Power regulator",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "11/05/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 16,
+        "defectCount": 1,
+        "realCost": 2149,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "NTF",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Power regulator",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (10/04/2026).",
+            "who": "Manal Bernoussi",
+            "when": "10/04/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Pièce conforme.",
+            "who": "Manal Bernoussi",
+            "when": "11/05/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN VB5 2026 1706",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "28/04/2026",
+      "deadline": "",
+      "officialDate": "13/05/2026",
+      "problemDescription": "Wire harness NOK",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "13/05/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 17,
+        "defectCount": 1,
+        "realCost": 1432,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Supplier",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Wire harness NOK",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (28/04/2026).",
+            "who": "Manal Bernoussi",
+            "when": "28/04/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [
+            "Défaut fournisseur : terminal non totalement inséré (pattes de verrouillage déformées) ; le test électrique ne détecte pas les défauts d'insertion mécanique."
+          ],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "En attente du rapport 8D fournisseur.",
+            "who": "Manal Bernoussi",
+            "when": "13/05/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC VB5 2026 1539",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "15/04/2026",
+      "deadline": "",
+      "officialDate": "22/05/2026",
+      "problemDescription": "Heater leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "22/05/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 23,
+        "defectCount": 1,
+        "realCost": 2149,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "supplier",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Heater leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (15/04/2026).",
+            "who": "Manal Bernoussi",
+            "when": "15/04/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [
+            "Fuite entre tube D et tube plat ; fournisseur évoque une épaisseur insuffisante du couteau de sertissage du noyau ; défaut détecté après 1725 km ; fournisseur non impliqué."
+          ],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Épaisseur du couteau de sertissage augmentée (2,7→2,9 mm) ; salle à température constante ajoutée (25–26°C) pour l'inspection ; standard d'inspection du noyau amélioré pour éviter les erreurs liées à la température.",
+            "who": "Manal Bernoussi",
+            "when": "22/05/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN WB5 2026 1717",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "20/05/2026",
+      "deadline": "",
+      "officialDate": "21/05/2026",
+      "problemDescription": "Foam not properly stock",
+      "incidentLevel": "D",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "21/05/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "D",
+        "incidentNumber": 25,
+        "defectCount": 5,
+        "realCost": 860,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "under analyse",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Foam not properly stock",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (20/05/2026).",
+            "who": "Manal Bernoussi",
+            "when": "20/05/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [
+            "Problème de méthode/standard d'emballage ; la mousse se décolle dans les cartons ; risque non couvert par PFMEA/LPA."
+          ],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Contrôle régulier du contenu du carton avant fermeture ; JES mis à jour (méthode de stockage/manutention) ; audits hebdomadaires d'emballage ; contrôle emballage ajouté au LPA ; formation des opérateurs à la manutention des pièces sensibles.",
+            "who": "Manal Bernoussi",
+            "when": "21/05/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 4723",
+      "customer": "",
+      "plant": "VIGO",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "04/06/2026",
+      "deadline": "",
+      "officialDate": "04/06/2026",
+      "problemDescription": "Condenser with problem of no aire circulation",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "04/06/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 37,
+        "defectCount": 1,
+        "realCost": 1504,
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Process",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Condenser with problem of no aire circulation",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (04/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "04/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [
+            "Absence de mécanisme de fixation/poka-yoke pour la position de la buse ; risque de blocage par contamination flux non identifié ; absence de checklist N1 sur le positionnement buse."
+          ],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Barres de protection installées contre les projections de flux ; point de contrôle du positionnement de la buse ajouté en début de poste ; test ATEQ amélioré pour détecter les blocages partiels ; pièce maître créée pour blocage partiel.",
+            "who": "Manal Bernoussi",
+            "when": "04/06/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC FV6 2026 4659",
+      "customer": "",
+      "plant": "Vigo",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "03/06/2026",
+      "deadline": "",
+      "officialDate": "12/06/2026",
+      "problemDescription": "Blower vibration",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "12/06/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 28,
+        "defectCount": 1,
+        "realCost": "",
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Rejected ",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Blower vibration",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (03/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "03/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Conclusion : défaut non généré dans le process Xiezhong (Ingénieur Process, 10/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "12/06/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC VB5 2026 1911",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "11/05/2026",
+      "deadline": "",
+      "officialDate": "16/06/2026",
+      "problemDescription": "Evaporator leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "16/06/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 22,
+        "defectCount": 1,
+        "realCost": 2149,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "NTF",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Evaporator leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (11/05/2026).",
+            "who": "Manal Bernoussi",
+            "when": "11/05/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Pièce conforme.",
+            "who": "Manal Bernoussi",
+            "when": "16/06/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026  4964",
+      "customer": "",
+      "plant": "VIGO",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "12/06/2026",
+      "deadline": "",
+      "officialDate": "17/06/2026",
+      "problemDescription": "Condenser leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "17/06/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 32,
+        "defectCount": 1,
+        "realCost": "",
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Process",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Condenser leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (12/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "12/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [
+            "Bras de fixation mal réglé, pinces endommagées ; le test hélium ne détecte pas les fuites masquées par le flux ; absence de système garantissant la stabilité du gabarit (maintenance préventive insuffisante)."
+          ],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Bras refixé/sécurisé, pinces endommagées remplacées ; fréquence de maintenance préventive augmentée ; checklist horaire créée ; inspection visuelle à 100% du jeu bride/collecteur avec marquage ; nouveau gabarit commandé en Chine.",
+            "who": "Manal Bernoussi",
+            "when": "17/06/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "\nQAN FV6 2026 4967",
+      "customer": "",
+      "plant": "VIGO",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "12/06/2026",
+      "deadline": "",
+      "officialDate": "20/06/2026",
+      "problemDescription": "Condenser leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "20/06/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 31,
+        "defectCount": 1,
+        "realCost": "",
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Process",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Condenser leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (12/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "12/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [
+            "Bras de fixation mal réglé, pinces endommagées ; le test hélium ne détecte pas les fuites masquées par le flux ; absence de système garantissant la stabilité du gabarit."
+          ],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Bras refixé/sécurisé, pinces endommagées remplacées ; fréquence de maintenance préventive augmentée ; checklist horaire créée ; inspection visuelle à 100% du jeu bride/collecteur avec marquage.",
+            "who": "Manal Bernoussi",
+            "when": "20/06/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC VB5 2026 1994",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "18/05/2026",
+      "deadline": "",
+      "officialDate": "22/06/2026",
+      "problemDescription": "Heater leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "22/06/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 24,
+        "defectCount": 1,
+        "realCost": 2149,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "under analyse",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Heater leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (18/05/2026).",
+            "who": "Manal Bernoussi",
+            "when": "18/05/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [
+            "Fuite entre tube D et tube plat ; fournisseur évoque un process non standardisé (risque de déformation stockage/rotation tube B non identifié) ; défaut détecté après 4894 km, hors process usine ; PFMEA non validée efficacement par l'équipe projet."
+          ],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Palettes supplémentaires ajoutées au bac de stockage tube B (mesure temporaire) ; 5 chariots de rotation ajoutés ; instructions de stockage/rotation mises à jour ; PFMEA mise à jour avec revue d'équipe.",
+            "who": "Manal Bernoussi",
+            "when": "22/06/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN 824 2026 848",
+      "customer": "",
+      "plant": "Madrid",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "03/06/2026",
+      "deadline": "",
+      "officialDate": "23/06/2026",
+      "problemDescription": "Condenser leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "23/06/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 29,
+        "defectCount": 1,
+        "realCost": 2709,
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "NTF",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Condenser leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (03/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "03/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Pièce conforme.",
+            "who": "Manal Bernoussi",
+            "when": "23/06/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC 764 2026 4305",
+      "customer": "",
+      "plant": "Tarnava",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "15/06/2026",
+      "deadline": "",
+      "officialDate": "01/07/2026",
+      "problemDescription": "condenser leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "01/07/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 36,
+        "defectCount": 1,
+        "realCost": "",
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "condenser leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (15/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "15/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "En attente de la pièce pour analyse.",
+            "who": "Manal Bernoussi",
+            "when": "01/07/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC 764 2026 4362",
+      "customer": "",
+      "plant": "Tarnava",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "17/06/2026",
+      "deadline": "",
+      "officialDate": "03/07/2026",
+      "problemDescription": "condenser leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "03/07/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 35,
+        "defectCount": 1,
+        "realCost": "",
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "condenser leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (17/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "17/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "En attente de la pièce pour analyse.",
+            "who": "Manal Bernoussi",
+            "when": "03/07/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN VB5   2026 2391",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "20/06/2026",
+      "deadline": "",
+      "officialDate": "03/07/2026",
+      "problemDescription": "Evaporator leakage",
+      "incidentLevel": "D",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "03/07/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "D",
+        "incidentNumber": 33,
+        "defectCount": 1,
+        "realCost": 1719,
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "NTF",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Evaporator leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (20/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "20/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Pièce conforme.",
+            "who": "Manal Bernoussi",
+            "when": "03/07/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC 764 2026 4531",
+      "customer": "",
+      "plant": "Tarnava",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "23/06/2026",
+      "deadline": "",
+      "officialDate": "09/07/2026",
+      "problemDescription": "condenser leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "09/07/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 34,
+        "defectCount": 1,
+        "realCost": "",
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "condenser leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (23/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "23/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "En attente de la pièce pour analyse.",
+            "who": "Manal Bernoussi",
+            "when": "09/07/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "Q202600853033",
+      "customer": "",
+      "plant": "Somaca",
+      "productReference": "",
+      "whoAnswered": "Bilal En-Neassi",
+      "claimDate": "03/03/2026",
+      "deadline": "",
+      "officialDate": "04/03/2026",
+      "problemDescription": "duplicate radiator label",
+      "incidentLevel": "A",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "CLOSED",
+      "currentStep": 8,
+      "history": [],
+      "d0": {
+        "officialDate": "04/03/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "A",
+        "incidentNumber": 37,
+        "defectCount": 81,
+        "realCost": 4778.31,
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Process",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Bilal En-Neassi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "duplicate radiator label",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (03/03/2026).",
+            "who": "Bilal En-Neassi",
+            "when": "03/03/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Fournisseur contacté pour améliorer le système ; verrou empêchant l'impression sans référence pièce ; identification par machine ajoutée (codes 1–4) ; JES mis à jour (vérification différentielle des étiquettes) ; scan anti-doublon en logistique ; JES emballage créé ; poste de scan ajouté au GP12.",
+            "who": "Bilal En-Neassi",
+            "when": "04/03/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "24/03/2026",
+        "teamRecognized": true
+      }
+    },
+    {
+      "id": "Q202600853081",
+      "customer": "",
+      "plant": "Tangier",
+      "productReference": "",
+      "whoAnswered": "Bilal En-Neassi",
+      "claimDate": "27/02/2026",
+      "deadline": "",
+      "officialDate": "28/02/2026",
+      "problemDescription": "duplicate radiator label",
+      "incidentLevel": "A",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "CLOSED",
+      "currentStep": 8,
+      "history": [],
+      "d0": {
+        "officialDate": "28/02/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "A",
+        "incidentNumber": 37,
+        "defectCount": 100,
+        "realCost": 11680.05,
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Process",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Bilal En-Neassi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "duplicate radiator label",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (03/03/2026).",
+            "who": "Bilal En-Neassi",
+            "when": "27/02/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Fournisseur contacté pour améliorer le système ; verrou empêchant l'impression sans référence pièce ; identification par machine ajoutée (codes 1–4) ; JES mis à jour (vérification différentielle des étiquettes) ; scan anti-doublon en logistique ; JES emballage créé ; poste de scan ajouté au GP12.",
+            "who": "Bilal En-Neassi",
+            "when": "28/02/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "02/04/2026",
+        "teamRecognized": true
+      }
+    },
+    {
+      "id": "QEC VB5 2026 2255",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "10/06/2026",
+      "deadline": "",
+      "officialDate": "16/06/2026",
+      "problemDescription": "Heater leakage",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "16/06/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 38,
+        "defectCount": 1,
+        "realCost": "",
+        "pactStatus": "A",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Supplier",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Heater leakage",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (10/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "10/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [
+            "Fuite au raccord tube D/tube plat ; défaut détecté après 1200 km ; réclamation transmise au fournisseur."
+          ],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Palettes supplémentaires ajoutées (mesure temporaire) ; 5 chariots de rotation ajoutés ; instructions de stockage/rotation mises à jour ; PFMEA mise à jour avec revue d'équipe pour prévenir les futurs projets.",
+            "who": "Manal Bernoussi",
+            "when": "16/06/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC VB5 2026 2346",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "17/06/2026",
+      "deadline": "",
+      "officialDate": "17/072026",
+      "problemDescription": "The stepper motor is not working correctly",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "17/072026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 39,
+        "defectCount": 1,
+        "realCost": "",
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "NTF",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "The stepper motor is not working correctly",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (17/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "17/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Pièce conforme.",
+            "who": "Manal Bernoussi",
+            "when": "17/072026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 6116",
+      "customer": "",
+      "plant": "VIGO",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "13/07/2026",
+      "deadline": "",
+      "officialDate": "21/07/2026",
+      "problemDescription": "PTC not working",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "21/07/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 40,
+        "defectCount": 1,
+        "realCost": "",
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "waiting the part for analyse",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "PTC not working",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (13/07/2026).",
+            "who": "Manal Bernoussi",
+            "when": "13/07/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "En attente de la pièce pour analyse.",
+            "who": "Manal Bernoussi",
+            "when": "21/07/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QAN FV6 2026 6212",
+      "customer": "",
+      "plant": "VIGO",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "15/07/2026",
+      "deadline": "",
+      "officialDate": " 22/07/2026",
+      "problemDescription": "Terminal demi-inertion",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": " 22/07/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 41,
+        "defectCount": 1,
+        "realCost": "",
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "waiting the part for analyse",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Terminal demi-inertion",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (15/07/2026).",
+            "who": "Manal Bernoussi",
+            "when": "15/07/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "En attente de la pièce pour analyse.",
+            "who": "Manal Bernoussi",
+            "when": " 22/07/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "QEC VB5 2026 2482",
+      "customer": "",
+      "plant": "Zaragoza",
+      "productReference": "",
+      "whoAnswered": "Manal Bernoussi",
+      "claimDate": "26/06/2026",
+      "deadline": "",
+      "officialDate": "24/07/2026",
+      "problemDescription": "Power regulator malfunction",
+      "incidentLevel": "G1",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "24/07/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "G1",
+        "incidentNumber": 42,
+        "defectCount": 1,
+        "realCost": "",
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "waiting the part for analyse",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Manal Bernoussi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Power regulator malfunction",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (26/06/2026).",
+            "who": "Manal Bernoussi",
+            "when": "26/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "En attente de la pièce pour analyse.",
+            "who": "Manal Bernoussi",
+            "when": "24/07/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "Q202600874683",
+      "customer": "",
+      "plant": "Tangier",
+      "productReference": "",
+      "whoAnswered": "Bilal En-Neassi",
+      "claimDate": "18/06/2026",
+      "deadline": "",
+      "officialDate": "18/06/2026",
+      "problemDescription": "Condenser leakage\n",
+      "incidentLevel": "A",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "18/06/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "A",
+        "incidentNumber": 43,
+        "defectCount": 1,
+        "realCost": "",
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Process",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Bilal En-Neassi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Condenser leakage\n",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (18/06/2026).",
+            "who": "Bilal En-Neassi",
+            "when": "18/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [],
+          "machine": [
+            "Fissure de soudure créant un jeu entre bride et collecteur ; défaut par vibration/stress après test hélium ; risque non couvert par PFMEA/LPA."
+          ],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "Machine suspendue en attente de validation client ; retour au soudage manuel standard ; inspection coupe-feu après soudage manuel avec jauge dédiée ; inspection visuelle 100% du jeu bride/collecteur avec marquage ; loupe ajoutée au poste d'inspection ; process de gestion des pièces NG mis à jour et JES révisé ; traçabilité par marquage laser ajoutée au poste test hélium ; plan de validation laser en préparation.",
+            "who": "Bilal En-Neassi",
+            "when": "18/06/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    },
+    {
+      "id": "Q202600875685",
+      "customer": "",
+      "plant": "Tangier",
+      "productReference": "",
+      "whoAnswered": "Bilal En-Neassi",
+      "claimDate": "23/06/2026",
+      "deadline": "",
+      "officialDate": "24/06/2026",
+      "problemDescription": "Leakage condenser",
+      "incidentLevel": "A",
+      "urgency": "Medium",
+      "okmWarranty": "OKM",
+      "status": "PENDING",
+      "currentStep": 5,
+      "history": [],
+      "d0": {
+        "officialDate": "24/06/2026",
+        "receptionDateOfProduct": "",
+        "daysOpen": 0,
+        "incidentLevel": "A",
+        "incidentNumber": 44,
+        "defectCount": 4,
+        "realCost": "",
+        "pactStatus": "",
+        "pamtStatus": "A",
+        "preAnalysis24h": "sent",
+        "pact48h": "sent",
+        "pamt15d": "sent",
+        "effCheck34d": "",
+        "responsibility": "Process",
+        "recurrence": "no"
+      },
+      "d1": {
+        "teamLeader": "Bilal En-Neassi",
+        "members": []
+      },
+      "d2": {
+        "problemDescription": "Leakage condenser",
+        "riskMatrix": {
+          "severity": 0,
+          "occurrence": 0,
+          "detection": 0
+        }
+      },
+      "d3": {
+        "nbrBL": "",
+        "actions": [
+          {
+            "id": 0,
+            "action": "Xiezhong informé, alerte qualité affichée en ligne, formation équipe qualité/production (3 shifts) (23/06/2026).",
+            "who": "Bilal En-Neassi",
+            "when": "23/06/2026",
+            "status": "Fait"
+          }
+        ]
+      },
+      "d4": {
+        "ishikawa": {
+          "matiere": [],
+          "milieu": [],
+          "methode": [
+            "Le JES prévoyait 30 min de séchage avant mise en ligne alors que la validation process exigeait 8h min ; isolement des pièces NG non prévu au JES ; processus de gestion documentaire n'a pas répercuté l'exigence de séchage 8h dans le JES."
+          ],
+          "machine": [],
+          "mainOeuvre": [],
+          "mesure": []
+        },
+        "fiveWhys": []
+      },
+      "d5": {
+        "actions": [
+          {
+            "id": 0,
+            "action": "JES mis à jour (séchage min. 8h validé avant mise en ligne) ; formation opérateurs à la nouvelle méthode de stockage ; identification de l'emplacement de stockage par date ; JES mis à jour au poste d'inspection post-soudage manuel avec formation ; JES mis à jour (process standardisé d'isolement des pièces NG) ; machine de flux améliorée pour la manutention du collecteur ; JES mis à jour avec formation opérateurs.",
+            "who": "Bilal En-Neassi",
+            "when": "24/06/2026",
+            "status": "En cours"
+          }
+        ]
+      },
+      "d6": {
+        "actions": []
+      },
+      "d7": {
+        "actions": []
+      },
+      "d8": {
+        "closureDate": "",
+        "teamRecognized": false
+      }
+    }
+  ]
+}
